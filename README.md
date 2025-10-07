@@ -6,5 +6,5 @@ Here, I regularly  upload  problems to improve my skills in programming, problem
 
 ----- 
 Thanks for visiting! 🌟   
-If you found this helpful and want to learn more, follow me!   
+If you found this helpful and want to learn more, follow me!    
  
