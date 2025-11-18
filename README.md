@@ -2,7 +2,7 @@
 
 ---
 Welcome to my java repository! 💻
-Here, I regularly  upload  problems to improve my skills in programming, problem solving
+Here, I regularly  upload  problems to improve my skills in programming, problem solving 
 
 ----- 
 Thanks for visiting! 🌟   
