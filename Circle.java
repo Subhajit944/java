@@ -1,33 +1,9 @@
-import java.util.Scanner;
+package geometry;
+
 public class Circle {
-    double radiusInMm;
+    public double radius;
 
-    Circle(double radiusInMm){
-        this.radiusInMm = radiusInMm;
+    public Circle(double radius){
+        this.radius = radius;
     }
-
-    double getCircumference(){
-        return 2 * radiusInMm * Math.PI;
-    }
-
-    double getArea(){
-        return Math.PI * Math.pow(radiusInMm, 2);
-    }
-
-@Override
-public String toString() {
-    return "Circle Props : Radius in mm: "+radiusInMm
-    +",Circumference in mm :"+getCircumference()
-    +" Area in mm2:"+ getArea()+ " ";
-
-}
-
-public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
-    System.out.println("Welcome to the world of Circle\n");
-    System.out.println("Please enter your radius: ");
-    double radius = input.nextDouble();
-    Circle circle = new Circle(radius);
-    System.out.println(circle);
-}
 }
