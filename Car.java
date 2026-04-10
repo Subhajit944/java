@@ -1,8 +1,9 @@
-package polymorphism;
+package gettersetter;
 
-public class Car extends Vchicle {
+public class Car {
     
-    public int noOfDoors(){
-        return 5;
-    }
+    private String color;
+    private String model;
+    private double fuelLevel;
+    private long costOfPorchase;
 }
