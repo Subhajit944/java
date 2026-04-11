@@ -1,17 +1,21 @@
-package utils;
+package Exception;
 
-import geometry.Circle;
-import geometry.Rectangle;
+import java.util.Scanner;
 
 public class Calculator {
-    
     public static void main(String[] args) {
-        Circle cir = new Circle(5.5);
-        Rectangle rect = new Rectangle(10, 05);
-    
-    double cirArea = Math.PI* Math.pow(cir.radius, 2);
-    double rectArea =rect.breadth * rect.length;
+    Scanner input = new Scanner(System.in);
 
-    System.out.printf("Area of the circle is : %f, Area of the Rectangle is : %f" , cirArea, rectArea);
-   }
+    System.out.println("Welcome to Division Calculator...\n");
+    System.out.println("Please enter your two numbers:   ");
+    int first = input.nextInt();
+    int second = input.nextInt();
+
+    try{
+    int result = first / second;
+    System.out.printf( "Result is %d " , result );
+    } catch(ArithmeticException exception){
+        System.out.println("Divide by zero enter valid values");
+    }
+    }
 }
