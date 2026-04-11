@@ -1,21 +1,30 @@
-package Exception;
+package challange87;
 
 import java.util.Scanner;
 
 public class Calculator {
+    
     public static void main(String[] args) {
-    Scanner input = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
+        System.out.println("Welcome to calculator\n");
+        System.out.println("Enter first number :   ");
+        int first = input.nextInt();
+        System.out.println("Now, the second number:    ");
+        int second = input.nextInt();
 
-    System.out.println("Welcome to Division Calculator...\n");
-    System.out.println("Please enter your two numbers:   ");
-    int first = input.nextInt();
-    int second = input.nextInt();
 
-    try{
-    int result = first / second;
-    System.out.printf( "Result is %d " , result );
-    } catch(ArithmeticException exception){
-        System.out.println("Divide by zero enter valid values");
-    }
+        try{
+            int result = first / second;
+            System.out.printf("result is %d", result);
+        } catch (ArithmeticException exception){
+            if(exception.getMessage()
+            .equals("/ by zero")){
+        System.out.println("Divide by zero occurred.");
+    }else{
+        throw exception;
+
+
+            }
+        }
     }
 }
